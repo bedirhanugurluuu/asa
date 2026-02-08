@@ -7,6 +7,7 @@ export const translations = {
         about: "Hakkımızda",
         contact: "İletişim",
         getStarted: "Başlayın",
+        language: "Dil",
       },
     },
     hero: {
@@ -283,6 +284,12 @@ export const translations = {
       },
       copyright: "Tüm hakları saklıdır.",
     },
+    notFound: {
+      title: "404",
+      subtitle: "Sayfa Bulunamadı",
+      description: "Aradığınız sayfa mevcut değil veya taşınmış olabilir.",
+      button: "Ana Sayfaya Dön",
+    },
     propertyManagementTop: {
       subtitle: "Nasıl Çalışıyoruz?",
     },
@@ -427,6 +434,7 @@ export const translations = {
         about: "About",
         contact: "Contact",
         getStarted: "Get Started",
+        language: "Language",
       },
     },
     hero: {
@@ -703,6 +711,12 @@ export const translations = {
         consulting: "Consulting",
       },
       copyright: "All rights reserved.",
+    },
+    notFound: {
+      title: "404",
+      subtitle: "Page Not Found",
+      description: "The page you are looking for does not exist or may have been moved.",
+      button: "Go to Homepage",
     },
     propertyManagementTop: {
       subtitle: "How it works",

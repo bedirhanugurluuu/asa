@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
 import HeroTitle from "./HeroTitle";
@@ -123,6 +124,7 @@ export default function Hero() {
                 fill
                 className="object-cover"
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1280px"
               />
             </div>
@@ -242,9 +244,9 @@ export default function Hero() {
                   <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                     <IoCreateOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                   </div>
-                  <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                  <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                     {t.hero.services.listing}
-                  </h3>
+                  </h2>
                 </div>
 
                 {/* Fotoğraf */}
@@ -252,9 +254,9 @@ export default function Hero() {
                   <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                     <IoCameraOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                   </div>
-                  <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                  <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                     {t.hero.services.photography}
-                  </h3>
+                  </h2>
                 </div>
 
                 {/* Fiyatlandırma */}
@@ -262,9 +264,9 @@ export default function Hero() {
                   <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                     <IoPricetagOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                   </div>
-                  <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                  <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                     {t.hero.services.pricing}
-                  </h3>
+                  </h2>
                 </div>
 
                 {/* 7/24 iletişim */}
@@ -272,9 +274,9 @@ export default function Hero() {
                   <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                     <IoPhonePortraitOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                   </div>
-                  <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                  <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                     {t.hero.services.support}
-                  </h3>
+                  </h2>
                 </div>
 
                 {/* Temizlik */}
@@ -282,9 +284,9 @@ export default function Hero() {
                   <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                     <GiVacuumCleaner className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                   </div>
-                  <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                  <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                     {t.hero.services.cleaning}
-                  </h3>
+                  </h2>
                 </div>
 
                 {/* Aylık raporlama */}
@@ -292,17 +294,20 @@ export default function Hero() {
                   <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                     <TbReportAnalytics className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                   </div>
-                  <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                  <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                     {t.hero.services.reporting}
-                  </h3>
+                  </h2>
                 </div>
               </div>
               
               {/* İletişime geçin butonu */}
               <div className="mt-6 flex justify-center">
-                <button className="px-8 py-3 bg-dark text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+                <Link 
+                  href={currentLang === "en" ? "/en/quote" : "/quote"}
+                  className="px-8 py-3 bg-dark text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors inline-block"
+                >
                   {t.hero.services.contactButton}
-                </button>
+                </Link>
               </div>
             </div>
               </div>
@@ -406,9 +411,9 @@ export default function Hero() {
                       <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                         <IoCreateOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                      <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                         {t.hero.services.listing}
-                      </h3>
+                      </h2>
                     </div>
 
                     {/* Fotoğraf */}
@@ -416,9 +421,9 @@ export default function Hero() {
                       <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                         <IoCameraOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                      <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                         {t.hero.services.photography}
-                      </h3>
+                      </h2>
                     </div>
 
                     {/* Fiyatlandırma */}
@@ -426,9 +431,9 @@ export default function Hero() {
                       <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                         <IoPricetagOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                      <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                         {t.hero.services.pricingMobile}
-                      </h3>
+                      </h2>
                     </div>
 
                     {/* 7/24 iletişim */}
@@ -436,9 +441,9 @@ export default function Hero() {
                       <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                         <IoPhonePortraitOutline className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                      <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                         {t.hero.services.support}
-                      </h3>
+                      </h2>
                     </div>
 
                     {/* Temizlik */}
@@ -446,9 +451,9 @@ export default function Hero() {
                       <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                         <GiVacuumCleaner className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                      <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                         {t.hero.services.cleaning}
-                      </h3>
+                      </h2>
                     </div>
 
                     {/* Aylık raporlama */}
@@ -456,17 +461,20 @@ export default function Hero() {
                       <div className="w-12 h-12 bg-[#f5f6f7] rounded-full mb-3 flex items-center justify-center transition-colors duration-300 group-hover:bg-[#3E5765]">
                         <TbReportAnalytics className="w-6 h-6 text-gray-700 group-hover:text-[#ffffff] transition-colors duration-300" />
                       </div>
-                      <h3 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
+                      <h2 className="text-sm h-10 font-medium text-gray-900 text-center group-hover:text-[#3E5765] transition-colors duration-300">
                         {t.hero.services.reporting}
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                   
                   {/* İletişime geçin butonu */}
                   <div className="mt-6 flex justify-center">
-                    <button className="px-8 py-3 bg-dark text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors">
+                    <Link 
+                      href={currentLang === "en" ? "/en/quote" : "/quote"}
+                      className="px-8 py-3 bg-dark text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors inline-block"
+                    >
                       {t.hero.services.contactButton}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -100,10 +100,10 @@ export default function Services() {
         </h2>
 
         {/* Tab Navigation */}
-        <div className="relative mb-8 pb-4">
+        <div className="relative mb-2 md:mb-8 pb-4">
           <div 
             ref={scrollContainerRef}
-            className="overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory -mx-4 px-4 lg:mx-0 lg:px-0 lg:overflow-visible lg:snap-none"
+            className="overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory px-4 lg:px-0 lg:overflow-visible lg:snap-none"
           >
             <div className="flex gap-4 lg:justify-between min-w-max lg:min-w-0 relative">
               {t.services.tabs.map((tab, index) => (
@@ -113,7 +113,7 @@ export default function Services() {
                     tabRefs.current[index] = el;
                   }}
                   onClick={() => handleTabChange(index)}
-                  className={`px-2 text-sm md:text-base font-medium cursor-pointer transition-colors uppercase whitespace-nowrap snap-start shrink-0 ${
+                  className={`pb-3 md:pb-0px-2 text-sm md:text-base font-medium cursor-pointer transition-colors uppercase whitespace-nowrap snap-start shrink-0 ${
                     activeTab === index
                       ? "text-dark"
                       : "text-gray-600 hover:text-dark"

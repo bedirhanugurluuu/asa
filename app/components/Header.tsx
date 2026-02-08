@@ -75,6 +75,14 @@ export default function Header() {
 
   // Header stil hesaplama
   const getHeaderStyles = () => {
+    // Mobil menü açıkken her zaman beyaz arka plan (blur yerine)
+    if (isMenuOpen) {
+      return {
+        background: "rgba(255, 255, 255, 1)",
+        borderBottom: "0.5px solid rgba(0, 0, 0, 0.1)",
+      };
+    }
+
     // Ana sayfa dışındaki sayfalarda her zaman beyaz arka plan
     if (!isHomePage) {
       return {
@@ -297,7 +305,7 @@ export default function Header() {
                 {/* Language Selector */}
                 <div className="mb-8">
                   <div className="border-t border-gray-200 pt-6">
-                    <p className="text-sm text-gray-600 mb-4 uppercase font-medium">Language</p>
+                    <p className="text-sm text-gray-600 mb-4 uppercase font-medium">{t.header.nav.language}</p>
                     <div className="flex gap-4">
                       <button
                         onClick={() => {
