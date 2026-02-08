@@ -71,7 +71,7 @@ export default function AirbnbManagementPage() {
 
               {/* Yeşil Box - Küçük */}
               <div
-                className="bg-[#072c23] rounded-lg p-6 md:p-8 flex flex-col justify-end mx-auto"
+                className="bg-[#072c23] rounded-lg p-6 md:p-8 flex flex-col justify-end mx-4 md:mx-auto"
                 style={{
                   maxWidth: "400px",
                   minHeight: "400px",
