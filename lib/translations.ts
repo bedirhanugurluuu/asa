@@ -36,12 +36,12 @@ export const translations = {
     },
     about: {
       title: "Hakkımızda",
-      subtitle: "Uluslararası Lüks Kısa Dönem Kiralama & Airbnb Danışmanlığı",
+      subtitle: "Uluslararası Lüks Kısa Dönem Kiralama & Gelir Yönetimi",
       tagline: "Global şehirlerde, tek standart.",
       description:
-        "Global şehirlerde, tek standart. Yatırımcılar, mülk sahipleri ve misafirler için uçtan uca kısa dönem kiralama yönetimi.",
+        "Global şehirlerde tek standart: profesyonel mülk yönetimi. Yatırımcılar, mülk sahipleri ve misafirler için uçtan uca kısa dönem kiralama deneyimi sunuyoruz.",
       fullDescription:
-        "ASA Group; İngiltere, Türkiye, Yunanistan ve Dubai başta olmak üzere, premium lokasyonlarda Airbnb ve kısa dönem kiralama danışmanlığı, yönetimi ve gelir optimizasyonu hizmetleri sunan uluslararası bir markadır.",
+        "ASA Group Luxury Rent; İngiltere, Türkiye, Yunanistan ve Dubai başta olmak üzere premium lokasyonlarda faaliyet gösteren uluslararası bir mülk yönetimi ve gelir optimizasyonu markasıdır.Mülk sahiplerinin yatırımlarını sürdürülebilir ve yüksek getirili bir gelir modeline dönüştürmelerine yardımcı olurken, misafirler için üst düzey konaklama deneyimi sunar.",
       description1:
         "Yılların deneyimi ve yenilikçi yaklaşımımızla, işletmelerin dijital dönüşüm yolculuğunda güvenilir bir partner olmaktan gurur duyuyoruz.",
       description2:
@@ -58,21 +58,21 @@ export const translations = {
         subtitle: "Neden Biz ?",
         title: {
           prefix: "Neden",
-          highlightWord: "ASA Group",
+          highlightWord: "ASA Group Luxury Rent",
           suffix: "?",
         },
-        description: "Çünkü biz sadece kiralama yapmayız, varlık yönetiriz.",
+        description: "Çünkü biz sadece kiralama yapmayız, mülkünüzü profesyonel bir gelir modeline dönüştürürüz.",
         features: [
-          "4 ülke – tek operasyon standardı",
-          "Gelir ve doluluk odaklı veri temelli yönetim",
+          "4 ülkede tek operasyon standardı",
+          "Veri odaklı gelir ve doluluk yönetimi",
           "Luxury & yatırım uyumlu mülk stratejisi",
           "Otel standartlarında misafir deneyimi",
-          "Şeffaf raporlama & performans takibi",
+          "Şeffaf raporlama ve performans takibi",
         ],
       },
       team: {
-        title: "Ekibimizle Tanışın",
-        subtitle: "Şirketimizin misyonunu gerçekleştirmek için uzmanlık ve özveriyle yol gösteren vizyoner liderlerimizle tanışın.",
+        title: "Ana Ekibimizle Tanışın",
+        subtitle: "Uluslararası operasyonlarımızı yöneten, kısa dönem kiralama ve gelir yönetimi konusunda uzman ekibimizle tanışın.",
         members: [
           {
             name: "Samet Akbalık",
@@ -103,41 +103,41 @@ export const translations = {
       },
       expertise: {
         title: "Ülkelere Göre Uzmanlık",
-        description: "GuestReady, Avrupa ve Orta Doğu'da stratejik olarak konumlandırılmış ofisler aracılığıyla faaliyet göstermektedir. Her ofis, yerel operasyonları, mülk sahibi entegrasyonunu, misafir yönetimini ve mülk bakımını desteklemektedir. Ekiplerimiz, küresel bir standart sunmak için yerel uzmanlığı merkezi teknolojiyle birleştirir.",
+        description: "ASA Group Luxury Rent, Avrupa ve Orta Doğu’da stratejik lokasyonlarda faaliyet gösterir. Her şehirde yerel operasyon gücünü merkezi gelir yönetimi teknolojileriyle birleştirerek mülk sahiplerine global standartta hizmet sunar.",
         countries: {
-          uk: {
-            flag: "🇬🇧",
-            name: "İngiltere",
-            items: [
-              "London merkezli yatırım & short-stay yönetimi",
-              "Serviced apartment & corporate rental odaklı yapı",
-              "Profesyonel yatırımcı portföyleri",
-            ],
-          },
           tr: {
             flag: "🇹🇷",
             name: "Türkiye",
             items: [
-              "İstanbul, Bodrum, Çeşme, İzmir premium bölgeler",
-              "Luxury Airbnb & seasonal rental yönetimi",
-              "Yerli ve yabancı yatırımcıya özel çözümler",
+              "İstanbul, Bodrum, Çeşme ve İzmir başta olmak üzere premium lokasyonlar",
+              "Luxury short-stay & seasonal rental yönetimi",
+              "Yerli ve yabancı yatırımcılara özel mülk yönetim çözümleri",
+            ],
+          },
+          uk: {
+            flag: "🇬🇧",
+            name: "İngiltere",
+            items: [
+              "Londra merkezli yatırım ve short-stay yönetimi",
+              "Serviced apartment & corporate rental odaklı yapı",
+              "Profesyonel yatırımcı portföy yönetimi",
             ],
           },
           gr: {
             flag: "🇬🇷",
             name: "Yunanistan",
             items: [
-              "Atina, Mykonos, Santorini, Selanik",
-              "Tatil & yatırım odaklı kısa dönem kiralama",
-              "Yüksek sezon gelir optimizasyonu",
+              "Atina, Mykonos, Santorini ve Selanik premium bölgeler",
+              "Tatil ve yatırım odaklı kısa dönem kiralama yönetimi",
+              "Yüksek sezon gelir optimizasyonu ve fiyat stratejisi",
             ],
           },
           ae: {
             flag: "🇦🇪",
             name: "Dubai",
             items: [
-              "Holiday Home lisanslı Airbnb yönetimi",
-              "Yatırımcılar için pasif gelir modeli",
+              "Holiday Home lisansına uygun kısa dönem kiralama yönetimi",
+              "Uluslararası yatırımcılar için pasif gelir modeli",
               "Global misafir profiline uygun premium operasyon",
             ],
           },
@@ -181,7 +181,7 @@ export const translations = {
     },
     contact: {
       title: "Birlikte Çalışalım",
-      subtitle: "Yeni projeler, iş birlikleri veya tasarım hakkında bir sohbet için her zaman açığım. Aklınızda bir fikir varsa veya bağlantı kurmak istiyorsanız, lütfen iletişime geçmekten çekinmeyin.",
+      subtitle: "Mülk yönetimi, yeni işbirlikleri ve yatırım fırsatları için bizimle iletişime geçebilirsiniz. ASA Group Luxury Rent ekibi talebinizi inceleyerek en kısa sürede sizinle iletişime geçilecektir.",
       form: {
         firstName: "İsim",
         firstNamePlaceholder: "İsminiz",
@@ -204,8 +204,11 @@ export const translations = {
       },
     },
     quote: {
-      title: "Asa Group ile Gayrimenkul Yönetimi",
-      description: "Son teknoloji ürünlerimizle, kısa süreli kiralama ile ilgili süreçleri otomatikleştiriyoruz. Seçili lokasyonlarda, ekibimiz tam hizmet sunarak, mülkünüzden misafirlerinize kadar her şeyle ilgilenir ve her konaklamanın harika geçmesini sağlar.",
+      title: "ASA Group Luxury Rent ile Gayrimenkul Yönetimi",
+      description: [
+        "Kısa dönem kiralama süreçlerinizi uçtan uca yönetiyoruz. Seçkin lokasyonlarda yer alan mülklerinizi, profesyonel operasyon, dinamik fiyatlandırma ve misafir deneyimi odaklı hizmet anlayışıyla en yüksek gelire dönüştürüyoruz.",
+        "Mülkünüzden rezervasyona, temizlikten misafir iletişimine kadar tüm süreçleri sizin yerinize biz yönetiyoruz."
+      ],
       tabs: {
         property: "1- Mülkünüz",
         personal: "2- Kişisel Bilgiler",
@@ -303,20 +306,20 @@ export const translations = {
         {
           type: "video",
           image: "/images/services-4.avif",
-          title: "Ödemelerinizi Bekletmiyoruz",
-          subtitle: "Birçok kanalda ödeme bölümü yaparak sadece servis bedelimizi alıyor, ev sahiplerinin ödemelerine hızlıca ulaşmasını sağlıyoruz. Bu mümkün olmayan kanallarda ise tutarı ev sahiplerine gönderip rezervasyon sonunda faturamızı kesiyoruz.",
+          title: "Ödemelerinizi Geciktirmiyoruz",
+          subtitle: "Rezervasyonlarınızın finansal sürecini sizin adınıza yönetiyoruz. Birçok platformda ödemeleri misafirden tahsil ederek yalnızca hizmet bedelimizi keser, kalan tutarı hızlı ve düzenli şekilde hesabınıza aktarırız. Uygun olmayan kanallarda ise rezervasyon sonrası ödemenizi size ulaştırır ve faturalandırma sürecini şeffaf şekilde yürütürüz.",
         },
         {
           type: "image",
           image: "/images/card-2.jpeg",
-          title: "Şeffaf ve Esnek Teknoloji",
-          subtitle: "Kanal komisyonları, temizlik ve işletme ücretleri gibi tüm maliyetleri, konuk ödemelerinden size kalan tutara kadar panelimizde detaylıca görebilirsiniz.",
+          title: "Şeffaf ve Akıllı Yönetim Paneli",
+          subtitle: "Tüm rezervasyonlarınızı, gelirlerinizi, giderlerinizi ve doluluk oranınızı tek panel üzerinden anlık olarak takip edebilirsiniz. Kanal komisyonları, temizlik ve operasyon maliyetleri dahil tüm kalemler net ve şeffaf şekilde görüntülenir.",
         },
         {
           type: "image",
           image: "/images/card-3.jpeg",
-          title: "Evinize Göre Komisyon",
-          subtitle: "Her evin ihtiyaçları, potansiyeli ve geliri farklıdır; bu yüzden komisyon oranları da sabit değil, eve göre belirlenir.",
+          title: "Mülke Özel Esnek Komisyon Modeli",
+          subtitle: "Her mülkün potansiyeli, lokasyonu ve hedef kitlesi farklıdır. Bu nedenle komisyon oranlarımız sabit değildir; mülkünüzün gelir potansiyeline göre özel olarak belirlenir ve maksimum kazanç hedeflenir.",
         },
       ],
     },
@@ -332,17 +335,17 @@ export const translations = {
         {
           image: "/images/growth-1.jpg",
           title: "Kolayca başlayın",
-          description: "Tek başına ev sahipleri ve mülk sahipleri, ASA ile rezervasyonları yöneterek ve misafirleri zahmetsizce memnun ederek tatil kiralama işlerini başarılı işletmelere dönüştürebilirler.",
+          description: "Mülkünüzü kısa dönem kiralamaya uygun hale getirmek düşündüğünüzden çok daha kolay. ASA Group Luxury Rent, listeleme oluşturma, fiyatlandırma, operasyon ve misafir iletişimi dahil tüm süreci sizin adınıza yönetir. Siz sadece gelirinizi takip edersiniz.",
         },
         {
-          image: "/images/growth-2.avif",
+          image: "/images/growth-2.jpg",
           title: "Gelirinizi Yükseltin",
-          description: "ASA, gelirini arttırmak isteyen ve o mülklerin bölgesel anlamda liderleşmesine yardımcı olan, yüzlerce ilanı yönetir ve yüksek gelir elde edilmesini sağlar.",
+          description: "ASA Group Luxury Rent, mülkünüzün gerçek gelir potansiyelini ortaya çıkarır. Dinamik fiyatlandırma, çoklu platform yönetimi ve profesyonel operasyon sayesinde doluluk oranınızı artırır, mülkünüzden sürdürülebilir ve yüksek gelir elde etmenizi sağlarız.",
         },
         {
           image: "/images/growth-3.jpeg",
           title: "Mülkünüzü Liderleştirin",
-          description: "ASA, yönettiğiniz mülkün temizlik ve profesyonel fotoğraf çekimi hizmetlerini yaparak mülkünüzü daha iyi bir şekilde göstermenizi sağlar.",
+          description: "ASA Group Luxury Rent, mülkünüzü pazarda öne çıkaran tüm detayları profesyonel şekilde planlar. Profesyonel fotoğraf ve video çekimi, ilan optimizasyonu, doğru hedef kitleye ulaşma ve marka konumlandırması ile mülkünüzün görünürlüğünü ve rezervasyon performansını artırır. Amacımız, mülkünüzü bulunduğu bölgede tercih edilen ve yüksek talep gören bir konuma taşımaktır.",
         },
       ],
     },
@@ -357,70 +360,79 @@ export const translations = {
         {
           name: "Rental Yönetimi",
           content: {
-            title: "Airbnb & Short-Term Rental Yönetimi",
-            subtitle: "Mülkünüzü Airbnb ve global kısa dönem platformlarda uçtan uca yönetiyoruz.",
+            title: "Kısa Dönem Kiralama & Platform Yönetimi",
+            subtitle: "Mülkünüzü Airbnb ve global kısa dönem kiralama platformlarında uçtan uca yönetiyoruz. ASA Group Luxury Rent; listeleme, fiyatlandırma, rezervasyon, operasyon ve misafir deneyimi dahil tüm süreci profesyonel olarak üstlenir.",
             items: [
-              "Profesyonel ilan oluşturma & optimizasyon",
-              "Dinamik fiyatlandırma ve sezon analizi",
-              "Rezervasyon & takvim yönetimi",
-              "7/24 misafir iletişimi",
-              "Check-in / check-out organizasyonu"
+              "Profesyonel ilan oluşturma ve sürekli optimizasyon",
+              "Dinamik fiyatlandırma ve sezon/etkinlik analizleri",
+              "Çoklu platform yönetimi (Airbnb, Booking vb.)",
+              "Rezervasyon ve takvim senkronizasyonu",
+              "7/24 misafir iletişimi ve destek",
+              "Check-in / Check-out operasyon yönetimi"
             ],
-            image: "/images/services-1.avif",
+            image: "/images/services-1.jpg",
           },
         },
         {
           name: "Gelir Optimizasyonu",
           content: {
             title: "Gelir Optimizasyonu & Yatırım Danışmanlığı",
-            subtitle: "Her mülk aynı şekilde yönetilmez. Biz lokasyona, pazara ve hedefe göre strateji kurarız.",
+            subtitle: "Her mülkün gelir potansiyeli lokasyon, hedef kitle ve talep dinamiklerine göre farklıdır. ASA Group Luxury Rent, mülkünüz için veri odaklı bir gelir stratejisi oluşturur ve maksimum getiri hedefiyle yönetim planı hazırlar.",
             items: [
-              "Lokasyon bazlı gelir potansiyeli analizi",
-              "Kısa / orta / uzun dönem kiralama karşılaştırması",
-              "ROI & yıllık getiri projeksiyonu",
-              "Portföy büyütme stratejileri"
+              "Lokasyon ve rakip analizine dayalı gelir potansiyeli raporu",
+              "Kısa, orta ve uzun dönem kiralama model karşılaştırması",
+              "Dinamik fiyatlandırma stratejileri",
+              "Sezon, etkinlik ve talep bazlı fiyat optimizasyonu",
+              "Portföy büyütme ve yatırım danışmanlığı"
             ],
-            image: "/images/services-2.avif",
+            image: "/images/services-2.jpg",
           },
         },
         {
           name: "Mülk Hazırlık",
           content: {
             title: "Mülk Hazırlık & Konsept Danışmanlığı",
-            subtitle: "Doğru konsept = daha yüksek geceleme bedeli.",
+            subtitle: "Doğru hazırlanan mülkler daha hızlı rezervasyon alır ve daha yüksek gecelik fiyatlarla kiralanır. ASA Group Luxury Rent, mülkünüzü kısa dönem kiralama standartlarına uygun hale getirerek gelir potansiyelinizi artırır.",
             items: [
-              "İç mimari & mobilya yönlendirmesi",
-              "Luxury short-stay konsept geliştirme",
-              "Fotoğraf & video çekim organizasyonu",
-              "Marka dili & deneyim standardı"
+              "İç mimari ve mobilya yönlendirmesi",
+              "Premium short-stay konsept geliştirme",
+              "Profesyonel fotoğraf & video çekim organizasyonu",
+              "Dekorasyon ve stil danışmanlığı",
+              "İlan görsel dili ve marka konumlandırması",
+              "Misafir deneyimi standartlarının oluşturulması"
             ],
-            image: "/images/services-3.jpeg",
+            image: "/images/services-3.jpg",
           },
         },
         {
           name: "Temizlik & Bakım",
           content: {
             title: "Operasyon, Temizlik & Bakım",
-            subtitle: "Her ülkede aynı kalite.",
+            subtitle: "Mülkünüzün her misafir sonrası aynı yüksek standartta hazır olmasını sağlıyoruz. ASA Group Luxury Rent, operasyon, temizlik ve teknik bakım süreçlerini profesyonel ekiplerle yönetir.",
             items: [
-              "Otel standartlarında temizlik",
-              "Teknik bakım & periyodik kontrol",
-              "Envanter ve hasar yönetimi"
+              "Otel standartlarında profesyonel temizlik",
+              "Check-out sonrası detaylı kontrol ve hazırlık",
+              "Teknik bakım ve periyodik denetim",
+              "Envanter takibi ve yenileme yönetimi",
+              "Hasar tespiti ve çözüm süreçleri",
+              "Acil durum destek organizasyonu"
             ],
-            image: "/images/services-4.avif",
+            image: "/images/services-4.jpg",
           },
         },
         {
           name: "Yasal Süreç",
           content: {
             title: "Yasal Süreç & Lokal Uyum",
-            subtitle: "Her ülkenin kuralları farklıdır. Biz süreci sizin adınıza yönetiriz.",
+            subtitle: "Kısa dönem kiralama her lokasyonda farklı yasal süreçler ve gereklilikler içerir. ASA Group Luxury Rent, mülkünüzün yerel yönetmeliklere uygun şekilde kiralanabilmesi için gerekli yönlendirme ve süreç takibini sağlar.",
             items: [
               "Lisans ve yerel yönetmelik danışmanlığı",
-              "Vergi ve operasyon uyum yönlendirmesi",
-              "Resmi kayıt ve izin süreçleri desteği"
+              "Vergi süreçleri hakkında yönlendirme",
+              "Resmi kayıt ve izin süreçleri desteği",
+              "Platform politikalarına uyum danışmanlığı",
+              "Operasyonel risklerin azaltılması"
             ],
-            image: "/images/services-5.avif",
+            image: "/images/services-5.jpg",
           },
         },
       ],
@@ -463,12 +475,12 @@ export const translations = {
     },
     about: {
       title: "About Us",
-      subtitle: "International Luxury Short-Term Rental & Airbnb Consultancy",
+      subtitle: "International Luxury Short-Term Rental & Revenue Management",
       tagline: "One standard, across global cities.",
       description:
-        "End-to-end short-term rental management for investors, property owners, and guests.",
+        "One standard in global cities: professional property management. We offer an end-to-end short-term rental experience for investors, property owners, and guests.",
       fullDescription:
-        "ASA Group is an international brand offering Airbnb and short-term rental consultancy, management, and revenue optimization services in premium locations, primarily in the UK, Turkey, Greece, and Dubai.",
+        "ASA Group Luxury Rent is an international property management and revenue optimization brand operating in premium locations, primarily in the UK, Turkey, Greece, and Dubai. It helps property owners transform their investments into a sustainable, high-yield revenue model while providing guests with a premium accommodation experience.",
       description1:
         "We are proud to be a trusted partner in businesses' digital transformation journey with years of experience and our innovative approach.",
       description2:
@@ -485,21 +497,21 @@ export const translations = {
         subtitle: "Why Us ?",
         title: {
           prefix: "Why",
-          highlightWord: "ASA Group",
+          highlightWord: "ASA Group Luxury Rent",
           suffix: "?",
         },
-        description: "Because we don't just rent, we manage assets.",
+        description: "Because we don't just rent, we turn your property into a professional income model.",
         features: [
-          "4 countries – one operational standard",
-          "Revenue and occupancy-focused data-driven management",
-          "Luxury & investment-compatible property strategy",
+          "Single operational standard across 4 countries",
+          "Data-driven revenue and occupancy management",
+          "Luxury & investment-aligned property strategy",
           "Hotel-standard guest experience",
-          "Transparent reporting & performance tracking",
+          "Transparent reporting and performance tracking",
         ],
       },
       team: {
-        title: "Meet Our Team",
-        subtitle: "Meet our visionary leaders who guide us with expertise and dedication to fulfill our company's mission.",
+        title: "Meet Our Core Team",
+        subtitle: "Meet our team of experts who manage our international operations and specialize in short-term rentals and revenue management.",
         members: [
           {
             name: "Samet Akbalık",
@@ -530,42 +542,42 @@ export const translations = {
       },
       expertise: {
         title: "Expertise by Country",
-        description: "GuestReady operates through strategically located offices across Europe and the Middle East. Each office supports local operations, owner integration, guest management, and property maintenance. Our teams combine local expertise with central technology to deliver a global standard.",
+        description: "ASA Group Luxury Rent operates in strategic locations across Europe and the Middle East. It combines local operational strength in each city with centralized revenue management technologies to provide property owners with global-standard services.",
         countries: {
-          uk: {
-            flag: "🇬🇧",
-            name: "United Kingdom",
-            items: [
-              "London-based investment & short-stay management",
-              "Serviced apartment & corporate rental focused structure",
-              "Professional investor portfolios",
-            ],
-          },
           tr: {
             flag: "🇹🇷",
             name: "Turkey",
             items: [
-              "Istanbul, Bodrum, Çeşme, İzmir premium regions",
-              "Luxury Airbnb & seasonal rental management",
-              "Custom solutions for local and foreign investors",
+              "Premium locations, primarily Istanbul, Bodrum, Çeşme, and Izmir",
+              "Luxury short-stay & seasonal rental management",
+              "Property management solutions tailored for local and foreign investors",
+            ],
+          },
+          uk: {
+            flag: "🇬🇧",
+            name: "United Kingdom",
+            items: [
+              "London-based investment and short-stay management",
+              "Serviced apartment & corporate rental focused structure",
+              "Professional investor portfolio management",
             ],
           },
           gr: {
             flag: "🇬🇷",
             name: "Greece",
             items: [
-              "Athens, Mykonos, Santorini, Thessaloniki",
-              "Holiday & investment-focused short-term rentals",
-              "High season revenue optimization",
+              "Premium areas in Athens, Mykonos, Santorini, and Thessaloniki",
+              "Vacation and investment-focused short-term rental management",
+              "High season revenue optimization and pricing strategy",
             ],
           },
           ae: {
             flag: "🇦🇪",
             name: "Dubai",
             items: [
-              "Holiday Home licensed Airbnb management",
-              "Passive income model for investors",
-              "Premium operations suited to global guest profiles",
+              "Short-term rental management compliant with Holiday Home licensing",
+              "Passive income model for international investors",
+              "Premium operations tailored to a global guest profile",
             ],
           },
         },
@@ -609,7 +621,7 @@ export const translations = {
     contact: {
       title: "Let's Work Together",
       subtitle:
-        "I'm always open to new projects, collaborations, or a conversation about design. If you have an idea in mind or want to connect, feel free to get in touch.",
+        "You can contact us for property management, new partnerships, and investment opportunities. The ASA Group Luxury Rent team will review your request and contact you as soon as possible.",
       form: {
         firstName: "First Name",
         firstNamePlaceholder: "Your first name",
@@ -632,8 +644,11 @@ export const translations = {
       },
     },
     quote: {
-      title: "Property Management with ASA Group",
-      description: "With our cutting-edge products, we automate processes related to short-term rentals. In selected locations, our team provides full service, handling everything from your property to your guests and ensuring every stay is wonderful.",
+      title: "Property Management with ASA Group Luxury Rent",
+      description: [
+        "We manage your short-term rental process end to end. We transform your property into a high-income asset by professional operation, dynamic pricing, and guest experience-focused service approach in premium locations.",
+        "We manage everything from reservation to cleaning to guest communication on your behalf."
+      ],
       tabs: {
         property: "1- Your Property",
         personal: "2- Personal Information",
@@ -731,20 +746,20 @@ export const translations = {
         {
           type: "video",
           image: "/images/services-4.avif",
-          title: "We Don't Hold Your Payments",
-          subtitle: "We offer payment processing in many channels, so we only charge our service fee, allowing property owners to quickly access their payments. For channels where this is not possible, we send the amount to the property owners and cut our invoice at the end of the reservation.",
+          title: "We Don't Delay Your Payments",
+          subtitle: "We manage the financial process of your reservations on your behalf. On many platforms, we collect payments from guests, deduct only our service fee, and transfer the remaining amount to your account quickly and regularly. For non-compliant channels, we deliver your post-reservation payment to you and conduct the invoicing process transparently.",
         },
         {
           type: "image",
           image: "/images/card-2.jpeg",
-          title: "Transparent and Flexible Technology",
-          subtitle: "You can see all costs such as channel commissions, cleaning and operating costs in our panel, from the amount paid by the guests to the amount left for you.",
+          title: "Transparent and Smart Management Panel",
+          subtitle: "You can see all reservations, income, expenses and occupancy rate in a single panel. All costs such as platform commissions, cleaning and operating costs are displayed net and transparently.",
         },
         {
           type: "image",
           image: "/images/card-3.jpeg",
-          title: "Commission Based on Your Property",
-          subtitle: "Each property has different needs, potential and income; therefore, commission rates are not fixed, but determined based on the property.",
+          title: "Country-Specific Flexible Commission Model",
+          subtitle: "You can track all your reservations, income, expenses, and occupancy rates in real time from a single dashboard. All items, including platform commissions, cleaning, and operating costs, are displayed clearly and transparently.",
         },
       ],
     },
@@ -760,17 +775,17 @@ export const translations = {
         {
           image: "/images/growth-1.jpg",
           title: "Get started easily",
-          description: "Individual homeowners and property owners can transform their vacation rental businesses into successful enterprises by managing reservations with ASA and effortlessly satisfying guests.",
+          description: "Making your property suitable for short-term rentals is much easier than you might think. ASA Group Luxury Rent manages the entire process on your behalf, including listing creation, pricing, operations, and guest communication. You simply track your income.",
         },
         {
-          image: "/images/growth-2.avif",
+          image: "/images/growth-2.jpg",
           title: "Increase Your Income",
-          description: "ASA, income-seeking and helping properties to become regional leaders, manages hundreds of listings and helps you increase your income.",
+          description: "ASA Group Luxury Rent unlocks your property's true income potential. Through dynamic pricing, multi-platform management, and professional operations, we increase your occupancy rates and ensure you earn sustainable, high income from your property.",
         },
         {
           image: "/images/growth-3.jpeg",
           title: "Lead Your Property",
-          description: "ASA, manages the cleaning and professional photography services of the property you manage, helping you showcase your property in the best possible way.",
+          description: "ASA Group Luxury Rent professionally plans all the details that make your property stand out in the market. Professional photography and videography, listing optimization, reaching the right target audience, and brand positioning increase your property's visibility and booking performance. Our goal is to position your property as a preferred and highly sought-after location in its area.",
         },
       ],
     },
@@ -785,71 +800,80 @@ export const translations = {
         {
           name: "Rental Management",
           content: {
-            title: "Airbnb & Short-Term Rental Management",
-            subtitle: "We manage your property on Airbnb and global short-term rental platforms end to end.",
+            title: "Short-Term Rental & Platform Management",
+            subtitle: "We manage your property end-to-end on Airbnb and global short-term rental platforms. ASA Group Luxury Rent professionally handles the entire process, including listing, pricing, reservations, operations, and guest experience.",
             items: [
-              "Professional listing creation & optimization",
-              "Dynamic pricing & season analysis",
-              "Reservation & calendar management",
-              "7/24 guest communication",
-              "Check-in / check-out organization"
+              "Professional listing creation and continuous optimization",
+              "Dynamic pricing and season/event analysis",
+              "Multi-platform management (Airbnb, Booking, etc.)",
+              "Reservation and calendar synchronization",
+              "24/7 guest communication and support",
+              "Check-in/Check-out operations management"
             ],
-            image: "/images/services-1.avif",
+            image: "/images/services-1.jpg",
           },
         },
         {
           name: "Revenue Optimization",
           content: {
             title: "Revenue Optimization & Investment Consulting",
-            subtitle: "Every property is not managed the same. We develop strategies tailored to location, market and target.",
+            subtitle: "The revenue potential of each property varies depending on its location, target audience, and demand dynamics. ASA Group Luxury Rent creates a data-driven revenue strategy for your property and prepares a management plan with the goal of maximizing returns.",
             items: [
-              "Location-based revenue potential analysis",
-              "Short-term / medium-term / long-term rental comparison",
-              "ROI & annual return projection",
-              "Portfolio growth strategies"
+              "Income potential report based on location and competitor analysis",
+              "Short, medium, and long-term rental model comparison",
+              "ROI and annual return projection",
+              "Dynamic pricing strategies",
+              "Season, event, and demand-based price optimization",
+              "Portfolio expansion and investment advisory"
             ],
-            image: "/images/services-2.avif",
+            image: "/images/services-2.jpg",
           },
         },
         {
           name: "Property Preparation",
           content: {
             title: "Property Preparation & Concept Consulting",
-            subtitle: "Correct concept = higher rental price.",
+            subtitle: "Properties that are properly prepared receive faster reservations and are rented at higher nightly rates. ASA Group Luxury Rent increases your income potential by bringing your property up to short-term rental standards.",
             items: [
-              "Interior design & furniture coordination",
-              "Luxury short-stay concept development",
-              "Photography & video production organization",
-              "Brand language & experience standards"
+              "Interior design and furniture guidance",
+              "Premium short-stay concept development",
+              "Professional photo & video shoot organization",
+              "Decoration and style consulting",
+              "Listing visual language and brand positioning",
+              "Creation of guest experience standards"
             ],
-            image: "/images/services-3.jpeg",
+            image: "/images/services-3.jpg",
           },
         },
         {
           name: "Cleaning & Maintenance",
           content: {
-            title: "Operation, Cleaning & Maintenance",
-            subtitle: "Same quality in every country.",
+            title: "Operations, Cleaning & Maintenance",
+            subtitle: "We ensure your property is ready to welcome guests at the same high standard after every stay. ASA Group Luxury Rent manages operations, cleaning, and technical maintenance processes with professional teams.",
             items: [
-              "Hotel-standard cleaning",
-              "Technical maintenance & periodic control",
-              "Inventory & damage management"
+              "Professional cleaning to hotel standards",
+              "Detailed inspection and preparation after check-out",
+              "Technical maintenance and periodic inspections",
+              "Inventory tracking and renewal management",
+              "Damage detection and resolution processes",
+              "Emergency support organization"
             ],
-            image: "/images/services-4.avif",
+            image: "/images/services-4.jpg",
           },
         },
         {
           name: "Legal Process",
           content: {
             title: "Legal Process & Local Compliance",
-            subtitle: "Every country has different rules. We manage the process on your behalf.",
+            subtitle: "Short-term rentals involve different legal processes and requirements in each location. ASA Group Luxury Rent provides the necessary guidance and process tracking to ensure your property can be rented in compliance with local regulations.",
             items: [
-              "Licensing & local regulations consulting",
-              "Tax & operational compliance guidance",
-              "Official registration & permit process support",
-              "Legal dispute resolution support"
+              "Licensing and local regulation consulting",
+              "Guidance on tax processes",
+              "Support for official registration and permit processes",
+              "Platform policy compliance consulting",
+              "Operational risk mitigation"
             ],
-            image: "/images/services-5.avif",
+            image: "/images/services-5.jpg",
           },
         },
       ],

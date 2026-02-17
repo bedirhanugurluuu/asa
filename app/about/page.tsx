@@ -95,7 +95,7 @@ function DescriptionSection({
       {/* Sol: Description */}
       <div>
         <p 
-          className="text-base md:text-lg text-white/70 leading-relaxed"
+          className="text-base md:text-lg text-white leading-relaxed"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(30px)",
@@ -109,7 +109,7 @@ function DescriptionSection({
       {/* Sağ: FullDescription */}
       <div>
         <p 
-          className="text-base md:text-lg text-white/70 leading-relaxed"
+          className="text-base md:text-lg text-white leading-relaxed"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(30px)",
@@ -155,7 +155,7 @@ function TeamMember({
   return (
     <div
       ref={memberRef}
-      className="w-full max-w-sm mx-auto"
+      className="w-full max-w-3xs mx-auto"
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(30px)",
@@ -189,7 +189,14 @@ export default function AboutPage() {
     <main className="min-h-screen bg-white">
       <Header />
 
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#071542]">
+      <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#071542]">
+        {/* Animated Wave Background - Stop Motion Style */}
+        <div className="wave-body absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
+          <div className="ocean">
+            <div className="wave"></div>
+            <div className="wave wave2"></div>
+          </div>
+        </div>
         <div className="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
           {/* Üst Grid: h1 ve SVG */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-12">
@@ -281,7 +288,7 @@ export default function AboutPage() {
             {/* Sağ: Fotoğraf Alanı */}
             <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden relative">
               <Image
-                src="/images/hero-image.jpeg"
+                src="/images/about-image.png"
                 alt="Why ASA Group"
                 fill
                 className="object-cover"
@@ -376,14 +383,14 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              {/* İngiltere */}
+              {/* Türkiye */}
               <div>
                 <h3 className="text-xl md:text-2xl font-medium text-dark mb-3 flex items-center gap-2">
-                  <span>{t.about.expertise.countries.uk.flag}</span>
-                  <span>{t.about.expertise.countries.uk.name}</span>
+                  <span>{t.about.expertise.countries.tr.flag}</span>
+                  <span>{t.about.expertise.countries.tr.name}</span>
                 </h3>
                 <ul className="space-y-2">
-                  {t.about.expertise.countries.uk.items.map((item, index) => (
+                  {t.about.expertise.countries.tr.items.map((item, index) => (
                     <li key={index} className="text-base md:text-lg text-dark/80 flex items-center">
                       <svg
                         width="16"
@@ -410,14 +417,14 @@ export default function AboutPage() {
                 </ul>
               </div>
 
-              {/* Türkiye */}
+              {/* İngiltere */}
               <div>
                 <h3 className="text-xl md:text-2xl font-medium text-dark mb-3 flex items-center gap-2">
-                  <span>{t.about.expertise.countries.tr.flag}</span>
-                  <span>{t.about.expertise.countries.tr.name}</span>
+                  <span>{t.about.expertise.countries.uk.flag}</span>
+                  <span>{t.about.expertise.countries.uk.name}</span>
                 </h3>
                 <ul className="space-y-2">
-                  {t.about.expertise.countries.tr.items.map((item, index) => (
+                  {t.about.expertise.countries.uk.items.map((item, index) => (
                     <li key={index} className="text-base md:text-lg text-dark/80 flex items-center">
                       <svg
                         width="16"

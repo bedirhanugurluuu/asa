@@ -68,6 +68,18 @@ export default function ContactPage() {
               >
                 {t.contact.subtitle}
               </p>
+
+              <div className="flex items-center justify-center">
+                <div className="md:w-full max-w-md lg:max-w-lg relative">
+                  <iframe
+                    src="/logos/about-illustration-contact.svg"
+                    className="w-full h-[400px] border-0"
+                    title="ASA Group Animation"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full h-[100px] md:h-[50px] bg-[#fff] pointer-events-none" />
+                </div>
+              </div>
             </div>
 
             {/* Sağ: Form */}

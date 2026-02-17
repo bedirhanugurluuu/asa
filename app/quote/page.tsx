@@ -335,12 +335,20 @@ export default function QuotePage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-dark mb-4 w-full">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-dark leading-tight mb-4 w-full">
                 {t.quote.title}
               </h2>
-              <p className="text-base md:text-lg text-dark/70 leading-relaxed w-full">
-                {t.quote.description}
-              </p>
+              <div className="text-base md:text-lg text-dark/70 leading-relaxed w-full mt-6">
+                {Array.isArray(t.quote.description) ? (
+                  t.quote.description.map((paragraph, index) => (
+                    <p key={index} className={index > 0 ? "mt-4" : ""}>
+                      {paragraph}
+                    </p>
+                  ))
+                ) : (
+                  <p>{t.quote.description}</p>
+                )}
+              </div>
             </div>
 
             {/* Sağ: Form */}

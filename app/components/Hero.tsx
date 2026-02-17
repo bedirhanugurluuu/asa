@@ -119,7 +119,7 @@ export default function Hero() {
           >
             <div className="w-full h-full flex items-center justify-center">
               <Image
-                src="/images/hero-image.jpeg"
+                src="/images/hero-image.png"
                 alt="Hero Image"
                 fill
                 className="object-cover"
