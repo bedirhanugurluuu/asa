@@ -328,7 +328,7 @@ export default function QuotePage() {
             <div className="w-full">
               <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden relative mb-6">
                 <Image
-                  src="/images/hero-image.jpeg"
+                  src="/images/hero-image.png"
                   alt="ASA Group"
                   fill
                   className="object-cover"

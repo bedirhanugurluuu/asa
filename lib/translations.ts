@@ -304,20 +304,20 @@ export const translations = {
       },
       cards: [
         {
-          type: "video",
-          image: "/images/services-4.avif",
+          type: "image",
+          image: "/images/work-1.jpg",
           title: "Ödemelerinizi Geciktirmiyoruz",
           subtitle: "Rezervasyonlarınızın finansal sürecini sizin adınıza yönetiyoruz. Birçok platformda ödemeleri misafirden tahsil ederek yalnızca hizmet bedelimizi keser, kalan tutarı hızlı ve düzenli şekilde hesabınıza aktarırız. Uygun olmayan kanallarda ise rezervasyon sonrası ödemenizi size ulaştırır ve faturalandırma sürecini şeffaf şekilde yürütürüz.",
         },
         {
           type: "image",
-          image: "/images/card-2.jpeg",
+          image: "/images/work-2.jpg",
           title: "Şeffaf ve Akıllı Yönetim Paneli",
           subtitle: "Tüm rezervasyonlarınızı, gelirlerinizi, giderlerinizi ve doluluk oranınızı tek panel üzerinden anlık olarak takip edebilirsiniz. Kanal komisyonları, temizlik ve operasyon maliyetleri dahil tüm kalemler net ve şeffaf şekilde görüntülenir.",
         },
         {
           type: "image",
-          image: "/images/card-3.jpeg",
+          image: "/images/work-3.jpg",
           title: "Mülke Özel Esnek Komisyon Modeli",
           subtitle: "Her mülkün potansiyeli, lokasyonu ve hedef kitlesi farklıdır. Bu nedenle komisyon oranlarımız sabit değildir; mülkünüzün gelir potansiyeline göre özel olarak belirlenir ve maksimum kazanç hedeflenir.",
         },
@@ -744,20 +744,20 @@ export const translations = {
       },
       cards: [
         {
-          type: "video",
-          image: "/images/services-4.avif",
+          type: "image",
+          image: "/images/work-1.jpg",
           title: "We Don't Delay Your Payments",
           subtitle: "We manage the financial process of your reservations on your behalf. On many platforms, we collect payments from guests, deduct only our service fee, and transfer the remaining amount to your account quickly and regularly. For non-compliant channels, we deliver your post-reservation payment to you and conduct the invoicing process transparently.",
         },
         {
           type: "image",
-          image: "/images/card-2.jpeg",
+          image: "/images/work-2.jpg",
           title: "Transparent and Smart Management Panel",
           subtitle: "You can see all reservations, income, expenses and occupancy rate in a single panel. All costs such as platform commissions, cleaning and operating costs are displayed net and transparently.",
         },
         {
           type: "image",
-          image: "/images/card-3.jpeg",
+          image: "/images/work-3.jpg",
           title: "Country-Specific Flexible Commission Model",
           subtitle: "You can track all your reservations, income, expenses, and occupancy rates in real time from a single dashboard. All items, including platform commissions, cleaning, and operating costs, are displayed clearly and transparently.",
         },
