@@ -34,6 +34,30 @@ export const translations = {
         contactButton: "İletişime geçin",
       },
     },
+    seo: {
+      title: "ASA Group Luxury Rent - Kısa Dönem Kiralama Yönetimi",
+      description: "ASA Group Luxury Rent, İngiltere, Türkiye, Yunanistan ve Dubai'de premium lokasyonlarda kısa dönem kiralama yönetimi ve gelir optimizasyonu hizmetleri sunar. Profesyonel Airbnb yönetimi, dinamik fiyatlandırma ve misafir deneyimi odaklı hizmet.",
+      home: {
+        title: "ASA Group Luxury Rent - Kısa Dönem Kiralama Yönetimi",
+        description: "Gayrimenkulünüzü değere, gelire ve potansiyeline dönüştüren profesyonel kısa dönem kiralama hizmeti. İngiltere, Türkiye, Yunanistan ve Dubai'de premium lokasyonlarda Airbnb ve kısa dönem kiralama yönetimi.",
+      },
+      about: {
+        title: "Hakkımızda - ASA Group Luxury Rent",
+        description: "Global şehirlerde tek standart: profesyonel mülk yönetimi. ASA Group Luxury Rent, İngiltere, Türkiye, Yunanistan ve Dubai'de premium lokasyonlarda kısa dönem kiralama danışmanlığı ve gelir optimizasyonu hizmetleri sunan uluslararası bir markadır.",
+      },
+      quote: {
+        title: "Teklif Alın - ASA Group Luxury Rent",
+        description: "Mülkünüz için özel gelir raporu ve hizmet teklifi alın. Kısa dönem kiralama süreçlerinizi uçtan uca yönetiyoruz. Profesyonel operasyon, dinamik fiyatlandırma ve misafir deneyimi odaklı hizmet.",
+      },
+      contact: {
+        title: "İletişim - ASA Group Luxury Rent",
+        description: "Yeni iş birlikleri, mülk yönetimi ve portföy ortaklıkları için bizimle iletişime geçin. Mülkünüzü ASA Group Luxury Rent ayrıcalığıyla yönetmek veya markamızla iş birliği yapmak istiyorsanız, ekibimiz en kısa sürede sizinle iletişime geçecektir.",
+      },
+      airbnbManagement: {
+        title: "Airbnb Yönetimi - ASA Group Luxury Rent",
+        description: "Airbnb ve kısa dönem kiralama platformlarında profesyonel mülk yönetimi. Listeleme, fiyatlandırma, rezervasyon, operasyon ve misafir deneyimi dahil tüm süreci profesyonel olarak yönetiyoruz.",
+      },
+    },
     about: {
       title: "Hakkımızda",
       subtitle: "Uluslararası Lüks Kısa Dönem Kiralama & Gelir Yönetimi",
@@ -471,6 +495,30 @@ export const translations = {
         cleaning: "Cleaning",
         reporting: "Monthly Reporting",
         contactButton: "Get In Touch",
+      },
+    },
+    seo: {
+      title: "ASA Group Luxury Rent - Short-Term Rental Management",
+      description: "ASA Group Luxury Rent provides short-term rental management and revenue optimization services in premium locations across the UK, Turkey, Greece, and Dubai. Professional Airbnb management, dynamic pricing, and guest experience-focused service.",
+      home: {
+        title: "ASA Group Luxury Rent - Short-Term Rental Management",
+        description: "Professional short-term rental service that transforms your property into value, revenue, and potential. Airbnb and short-term rental management in premium locations across the UK, Turkey, Greece, and Dubai.",
+      },
+      about: {
+        title: "About Us - ASA Group Luxury Rent",
+        description: "One standard in global cities: professional property management. ASA Group Luxury Rent is an international brand providing short-term rental consulting and revenue optimization services in premium locations across the UK, Turkey, Greece, and Dubai.",
+      },
+      quote: {
+        title: "Get a Quote - ASA Group Luxury Rent",
+        description: "Get a custom revenue report and service quote for your property. We manage your short-term rental processes end to end. Professional operations, dynamic pricing, and guest experience-focused service.",
+      },
+      contact: {
+        title: "Contact - ASA Group Luxury Rent",
+        description: "Contact us for new collaborations, property management, and portfolio partnerships. If you want to manage your property with ASA Group Luxury Rent or collaborate with our brand, our team will contact you as soon as possible.",
+      },
+      airbnbManagement: {
+        title: "Airbnb Management - ASA Group Luxury Rent",
+        description: "Professional property management on Airbnb and short-term rental platforms. We professionally manage the entire process including listing, pricing, reservations, operations, and guest experience.",
       },
     },
     about: {

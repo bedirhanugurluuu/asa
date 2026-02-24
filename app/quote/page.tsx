@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import SEO from "../components/SEO";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
 
@@ -28,6 +29,7 @@ interface AddressSuggestion {
 export default function QuotePage() {
   const currentLang = useLanguage();
   const t = translations[currentLang];
+  const seo = t.seo?.quote || { title: "", description: "" };
   const months = t.quote.propertyTab.months;
   const bedroomOptions = t.quote.propertyTab.bedroomOptions;
   
@@ -302,23 +304,38 @@ export default function QuotePage() {
       message,
     };
 
-    // TODO: Send email with form data
-    console.log("Form Data:", formData);
-    
-    // Show success message
-    setIsSubmitted(true);
-    
-    // Scroll to success message
-    setTimeout(() => {
-      successMessageRef.current?.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'start' 
+    try {
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    }, 100);
+
+      if (!response.ok) {
+        throw new Error("Failed to send quote request");
+      }
+
+      // Show success message
+      setIsSubmitted(true);
+      
+      // Scroll to success message
+      setTimeout(() => {
+        successMessageRef.current?.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }, 100);
+    } catch (error) {
+      console.error("Quote form error:", error);
+      alert("Teklif talebi gönderilirken bir hata oluştu. Lütfen tekrar deneyin.");
+    }
   };
 
   return (
     <main className="min-h-screen bg-white">
+      <SEO title={seo.title} description={seo.description} />
       <Header />
 
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">

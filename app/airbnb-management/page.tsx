@@ -7,12 +7,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroTitle from "../components/HeroTitle";
 import Services from "../components/Services";
+import SEO from "../components/SEO";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
 
 export default function AirbnbManagementPage() {
   const currentLang = useLanguage();
   const t = translations[currentLang];
+  const seo = t.seo?.airbnbManagement || { title: "", description: "" };
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [isBoxVisible, setIsBoxVisible] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
@@ -44,6 +46,7 @@ export default function AirbnbManagementPage() {
 
   return (
     <main className="min-h-screen">
+      <SEO title={seo.title} description={seo.description} />
       <Header />
 
       <section className="pt-32 pb-20" style={{ backgroundColor: "#faf5f0" }}>

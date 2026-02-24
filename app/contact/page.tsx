@@ -5,12 +5,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import HeroTitle from "../components/HeroTitle";
+import SEO from "../components/SEO";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
 
 export default function ContactPage() {
   const currentLang = useLanguage();
   const t = translations[currentLang];
+  const seo = t.seo?.contact || { title: "", description: "" };
   const [isVisible, setIsVisible] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -41,6 +43,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SEO title={seo.title} description={seo.description} />
       <Header />
 
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">

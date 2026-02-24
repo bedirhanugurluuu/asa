@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroTitle from "../components/HeroTitle";
 import Image from "next/image";
+import SEO from "../components/SEO";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
 
@@ -184,9 +185,11 @@ function TeamMember({
 export default function AboutPage() {
   const currentLang = useLanguage();
   const t = translations[currentLang];
+  const seo = t.seo?.about || { title: "", description: "" };
 
   return (
     <main className="min-h-screen bg-white">
+      <SEO title={seo.title} description={seo.description} />
       <Header />
 
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#071542]">
