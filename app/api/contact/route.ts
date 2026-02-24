@@ -52,7 +52,7 @@ export async function POST(request: Request) {
       { 
         success: true, 
         message: 'Email sent successfully',
-        emailId: emailToCompany.id 
+        emailId: emailToCompany.data?.id || null
       },
       { status: 200 }
     )
