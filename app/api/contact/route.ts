@@ -17,9 +17,15 @@ export async function POST(request: Request) {
     }
 
     // Email to company
+    const toEmail = process.env.RESEND_TO_EMAIL || 'info@asagrouglobal.com'
+    const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
+    
+    console.log('Sending email to:', toEmail)
+    console.log('From email:', fromEmail)
+    
     const emailToCompany = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
-      to: process.env.RESEND_TO_EMAIL || 'info@asagrouglobal.com',
+      from: fromEmail,
+      to: toEmail,
       replyTo: email, // Kullanıcının email'ini reply-to olarak ekle
       subject: `Yeni İletişim Formu Mesajı - ${firstName} ${lastName}`,
       html: `
@@ -33,6 +39,8 @@ export async function POST(request: Request) {
         <p style="color: #666; font-size: 12px;">Bu mesajı yanıtlamak için yukarıdaki e-posta adresine tıklayın.</p>
       `,
     })
+    
+    console.log('Email sent successfully:', emailToCompany.data)
 
     // Confirmation email to user (opsiyonel - domain doğrulaması gerektirir)
     // Eğer domain doğrulaması yapmadıysanız bu kısmı yorum satırı yapın
@@ -56,10 +64,19 @@ export async function POST(request: Request) {
       },
       { status: 200 }
     )
-  } catch (error) {
+  } catch (error: any) {
     console.error('Contact form error:', error)
+    console.error('Error details:', {
+      message: error?.message,
+      name: error?.name,
+      stack: error?.stack,
+      response: error?.response
+    })
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { 
+        error: 'Failed to send email',
+        details: error?.message || 'Unknown error'
+      },
       { status: 500 }
     )
   }
