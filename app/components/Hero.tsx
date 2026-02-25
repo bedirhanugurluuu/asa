@@ -168,31 +168,59 @@ export default function Hero() {
             <div className="flex gap-4 items-center space-y-4 mb-6">
               {/* Airbnb */}
               <div className="flex items-center gap-1 mb-0">
-                <div className="w-6 h-4">
-                <Image
+                <a
+                  href="https://www.airbnb.com.tr/users/profile/1469424809008526506"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-6 h-4 hover:opacity-80 transition-opacity"
+                >
+                  <Image
                     src="/logos/airbnb-logo.jpg"
                     alt="Airbnb"
                     width={36}
                     height={36}
                     className="object-contain"
                   />
-                </div>
+                </a>
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
                     <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <svg
-                          key={i}
-                          className={`w-4 h-4 ${
-                            i < 4
-                              ? "text-yellow-400 fill-yellow-400"
-                              : "text-gray-300"
-                          }`}
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                        </svg>
-                      ))}
+                      {[...Array(5)].map((_, i) => {
+                        const rating = 4.6;
+                        const fullStars = Math.floor(rating);
+                        const hasPartial = rating % 1 > 0 && i === fullStars;
+                        const partialFill = hasPartial ? (rating % 1) : 0;
+                        
+                        return (
+                          <div key={i} className="relative w-4 h-4 inline-block">
+                            {/* Boş yıldız arka plan */}
+                            <svg
+                              className="w-4 h-4 text-gray-300 fill-gray-300 absolute inset-0"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                            {/* Dolu yıldız (tam veya kısmi) */}
+                            {i < fullStars ? (
+                              <svg
+                                className="w-4 h-4 text-yellow-400 fill-yellow-400 absolute inset-0"
+                                viewBox="0 0 20 20"
+                              >
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                              </svg>
+                            ) : hasPartial ? (
+                              <div className="absolute inset-0 overflow-hidden" style={{ width: `${partialFill * 100}%` }}>
+                                <svg
+                                  className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                              </div>
+                            ) : null}
+                          </div>
+                        );
+                      })}
                       <span className="text-sm font-semibold text-gray-700 ml-1">
                         4.6
                       </span>
@@ -214,19 +242,42 @@ export default function Hero() {
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
                     <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <svg
-                          key={i}
-                          className={`w-4 h-4 ${
-                            i < 4
-                              ? "text-yellow-400 fill-yellow-400"
-                              : "text-gray-300"
-                          }`}
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                        </svg>
-                      ))}
+                      {[...Array(5)].map((_, i) => {
+                        const rating = 4.8;
+                        const fullStars = Math.floor(rating);
+                        const hasPartial = rating % 1 > 0 && i === fullStars;
+                        const partialFill = hasPartial ? (rating % 1) : 0;
+                        
+                        return (
+                          <div key={i} className="relative w-4 h-4 inline-block">
+                            {/* Boş yıldız arka plan */}
+                            <svg
+                              className="w-4 h-4 text-gray-300 fill-gray-300 absolute inset-0"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                            </svg>
+                            {/* Dolu yıldız (tam veya kısmi) */}
+                            {i < fullStars ? (
+                              <svg
+                                className="w-4 h-4 text-yellow-400 fill-yellow-400 absolute inset-0"
+                                viewBox="0 0 20 20"
+                              >
+                                <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                              </svg>
+                            ) : hasPartial ? (
+                              <div className="absolute inset-0 overflow-hidden" style={{ width: `${partialFill * 100}%` }}>
+                                <svg
+                                  className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                              </div>
+                            ) : null}
+                          </div>
+                        );
+                      })}
                       <span className="text-sm font-semibold text-gray-700 ml-1">
                         4.8
                       </span>
@@ -335,7 +386,12 @@ export default function Hero() {
                 <div className="flex gap-4 items-center space-y-4 mb-6">
                   {/* Airbnb */}
                   <div className="flex items-center gap-1 mb-0">
-                    <div className="w-6 h-4">
+                    <a
+                      href="https://www.airbnb.com.tr/users/profile/1469424809008526506"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-6 h-4 hover:opacity-80 transition-opacity"
+                    >
                       <Image
                         src="/logos/airbnb-logo.jpg"
                         alt="Airbnb"
@@ -343,24 +399,47 @@ export default function Hero() {
                         height={36}
                         className="object-contain"
                       />
-                    </div>
+                    </a>
                     <div className="flex-1">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
                         <div className="flex items-center">
-                          {[...Array(5)].map((_, i) => (
-                            <svg
-                              key={i}
-                              className={`w-4 h-4 ${
-                                i < 4
-                                  ? "text-yellow-400 fill-yellow-400"
-                                  : "text-gray-300"
-                              }`}
-                              viewBox="0 0 20 20"
-                            >
-                              <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                            </svg>
-                          ))}
-                          <span className="text-sm font-semibold text-gray-700 ml-1">
+                          {[...Array(5)].map((_, i) => {
+                            const rating = 4.6;
+                            const fullStars = Math.floor(rating);
+                            const hasPartial = rating % 1 > 0 && i === fullStars;
+                            const partialFill = hasPartial ? (rating % 1) : 0;
+                            
+                            return (
+                              <div key={i} className="relative w-4 h-4 inline-block">
+                                {/* Boş yıldız arka plan */}
+                                <svg
+                                  className="w-4 h-4 text-gray-300 fill-gray-300 absolute inset-0"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                {/* Dolu yıldız (tam veya kısmi) */}
+                                {i < fullStars ? (
+                                  <svg
+                                    className="w-4 h-4 text-yellow-400 fill-yellow-400 absolute inset-0"
+                                    viewBox="0 0 20 20"
+                                  >
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                  </svg>
+                                ) : hasPartial ? (
+                                  <div className="absolute inset-0 overflow-hidden" style={{ width: `${partialFill * 100}%` }}>
+                                    <svg
+                                      className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                                      viewBox="0 0 20 20"
+                                    >
+                                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                  </div>
+                                ) : null}
+                              </div>
+                            );
+                          })}
+                          <span className="text-xs font-semibold text-gray-700 ml-0.5">
                             4.6
                           </span>
                         </div>
@@ -379,22 +458,45 @@ export default function Hero() {
                       />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1">
                         <div className="flex items-center">
-                          {[...Array(5)].map((_, i) => (
-                            <svg
-                              key={i}
-                              className={`w-4 h-4 ${
-                                i < 4
-                                  ? "text-yellow-400 fill-yellow-400"
-                                  : "text-gray-300"
-                              }`}
-                              viewBox="0 0 20 20"
-                            >
-                              <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                            </svg>
-                          ))}
-                          <span className="text-sm font-semibold text-gray-700 ml-1">
+                          {[...Array(5)].map((_, i) => {
+                            const rating = 4.8;
+                            const fullStars = Math.floor(rating);
+                            const hasPartial = rating % 1 > 0 && i === fullStars;
+                            const partialFill = hasPartial ? (rating % 1) : 0;
+                            
+                            return (
+                              <div key={i} className="relative w-4 h-4 inline-block">
+                                {/* Boş yıldız arka plan */}
+                                <svg
+                                  className="w-4 h-4 text-gray-300 fill-gray-300 absolute inset-0"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                </svg>
+                                {/* Dolu yıldız (tam veya kısmi) */}
+                                {i < fullStars ? (
+                                  <svg
+                                    className="w-4 h-4 text-yellow-400 fill-yellow-400 absolute inset-0"
+                                    viewBox="0 0 20 20"
+                                  >
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                  </svg>
+                                ) : hasPartial ? (
+                                  <div className="absolute inset-0 overflow-hidden" style={{ width: `${partialFill * 100}%` }}>
+                                    <svg
+                                      className="w-4 h-4 text-yellow-400 fill-yellow-400"
+                                      viewBox="0 0 20 20"
+                                    >
+                                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                    </svg>
+                                  </div>
+                                ) : null}
+                              </div>
+                            );
+                          })}
+                          <span className="text-xs font-semibold text-gray-700 ml-0.5">
                             4.8
                           </span>
                         </div>

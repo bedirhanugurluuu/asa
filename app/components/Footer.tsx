@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaAirbnb } from "react-icons/fa";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -74,10 +74,13 @@ export default function Footer() {
             <div>
               <ul className="space-y-2 text-black">
                 <li className="hover:opacity-70 transition-opacity">
-                  <a href="mailto:info@asa.com">info@asa.com</a>
+                  <a href="mailto:info@asagrouglobal.com">info@asagrouglobal.com</a>
                 </li>
                 <li className="hover:opacity-70 transition-opacity">
-                  <a href="tel:+902121234567">+90 (212) 123 45 67</a>
+                  <a href="tel:+905335082418">+90 533 508 24 18</a>
+                </li>
+                <li className="hover:opacity-70 transition-opacity">
+                  <a href="tel:+905466434244">+90 546 643 42 44</a>
                 </li>
                 <li>{t.contact.info.location}</li>
               </ul>
@@ -88,40 +91,13 @@ export default function Footer() {
           <div className="flex flex-col items-start md:items-end">
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com"
+                href="https://www.airbnb.com.tr/users/profile/1469424809008526506"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:opacity-70 transition-opacity"
                 aria-label="Facebook"
               >
-                <FaFacebook size={24} />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black hover:opacity-70 transition-opacity"
-                aria-label="Instagram"
-              >
-                <FaInstagram size={24} />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black hover:opacity-70 transition-opacity"
-                aria-label="Twitter"
-              >
-                <FaTwitter size={24} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black hover:opacity-70 transition-opacity"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin size={24} />
+                <FaAirbnb size={24} />
               </a>
             </div>
           </div>
