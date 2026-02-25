@@ -1,7 +1,18 @@
 import { NextResponse } from 'next/server'
-import { Resend } from 'resend'
+import nodemailer from 'nodemailer'
 
-const resend = new Resend(process.env.RESEND_API_KEY || 're_KBrXLhVJ_CC2LcS6Bd3YR2nUq3msLYaTA')
+// SMTP transporter oluştur
+// Eğer info@asagrouglobal.com için özel SMTP ayarları varsa, bunları kullanın
+// Aksi halde Gmail SMTP kullanılacak
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST || 'smtp.gmail.com',
+  port: parseInt(process.env.SMTP_PORT || '587'),
+  secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
+  auth: {
+    user: process.env.SMTP_USER || process.env.GMAIL_USER || 'bedirhanugurlu3661@gmail.com',
+    pass: process.env.SMTP_PASSWORD || process.env.GMAIL_APP_PASSWORD || '', // App Password gerekli
+  },
+})
 
 export async function POST(request: Request) {
   try {
@@ -31,14 +42,14 @@ export async function POST(request: Request) {
     const monthsText = selectedMonths.join(', ')
 
     // Email to company
-    const toEmail = process.env.RESEND_TO_EMAIL || 'info@asagrouglobal.com'
-    const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'
+    const toEmail = process.env.SMTP_TO_EMAIL || process.env.GMAIL_TO_EMAIL || 'info@asagrouglobal.com'
+    const fromEmail = process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER || process.env.GMAIL_USER || 'bedirhanugurlu3661@gmail.com'
     
     console.log('Sending email to:', toEmail)
     console.log('From email:', fromEmail)
     
-    const emailToCompany = await resend.emails.send({
-      from: fromEmail,
+    const mailOptions = {
+      from: `"ASA Group" <${fromEmail}>`,
       to: toEmail,
       replyTo: email, // Kullanıcının email'ini reply-to olarak ekle
       subject: `Yeni Teklif Talebi - ${fullName}`,
@@ -60,14 +71,14 @@ export async function POST(request: Request) {
         <hr style="margin: 20px 0; border: none; border-top: 1px solid #eee;">
         <p style="color: #666; font-size: 12px;">Bu mesajı yanıtlamak için yukarıdaki e-posta adresine tıklayın.</p>
       `,
-    })
+    }
     
-    console.log('Email sent successfully:', emailToCompany.data)
+    const info = await transporter.sendMail(mailOptions)
+    console.log('Email sent successfully:', info.messageId)
 
-    // Confirmation email to user (opsiyonel - domain doğrulaması gerektirir)
-    // Eğer domain doğrulaması yapmadıysanız bu kısmı yorum satırı yapın
-    // const emailToUser = await resend.emails.send({
-    //   from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
+    // İsteğe bağlı: Kullanıcıya onay maili göndermek için
+    // const confirmationMail = await transporter.sendMail({
+    //   from: `"ASA Group" <${fromEmail}>`,
     //   to: email,
     //   subject: 'Teklif Talebiniz Alındı - ASA Group Luxury Rent',
     //   html: `
@@ -82,7 +93,7 @@ export async function POST(request: Request) {
       { 
         success: true, 
         message: 'Quote request sent successfully',
-        emailId: emailToCompany.data?.id || null
+        emailId: info.messageId || null
       },
       { status: 200 }
     )
