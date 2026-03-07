@@ -1,19 +1,14 @@
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import PropertyManagement from "../components/PropertyManagement";
-import Growth from "../components/Growth";
-import Services from "../components/Services";
-import Footer from "../components/Footer";
+import UnderConstruction from "../components/UnderConstruction";
+import SEO from "../components/SEO";
 
 export default function HomeEN() {
   return (
     <main className="min-h-screen">
-      <Header />
-      <Hero />
-      <PropertyManagement />
-      <Growth />
-      <Services />
-      <Footer />
+      <SEO 
+        title="Coming Soon - ASA Group Luxury Rent" 
+        description="ASA Group Luxury Rent website is coming soon. Contact us for short-term rental management and revenue optimization services." 
+      />
+      <UnderConstruction />
     </main>
   );
 }
