@@ -10,13 +10,10 @@ import { IoCreateOutline, IoCameraOutline, IoPricetagOutline, IoPhonePortraitOut
 import { GiVacuumCleaner } from "react-icons/gi";
 import { TbReportAnalytics } from "react-icons/tb";
 
-
-
 export default function Hero() {
   const currentLang = useLanguage();
   const t = translations[currentLang];
   const rotatingWords = t.hero.rotatingWords;
-  
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isGridVisible, setIsGridVisible] = useState(false);
