@@ -74,7 +74,7 @@ export default function Footer() {
             <div>
               <ul className="space-y-2 text-black">
                 <li className="hover:opacity-70 transition-opacity">
-                  <a href="mailto:info@asagrouglobal.com">info@asagrouglobal.com</a>
+                  <a href="mailto:info@asagroupglobal.com">info@asagroupglobal.com</a>
                 </li>
                 <li className="hover:opacity-70 transition-opacity">
                   <a href="tel:+905335082418">+90 533 508 24 18</a>

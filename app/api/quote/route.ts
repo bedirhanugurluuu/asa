@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
 // SMTP transporter oluştur
-// Eğer info@asagrouglobal.com için özel SMTP ayarları varsa, bunları kullanın
+// Eğer info@asagroupglobal.com için özel SMTP ayarları varsa, bunları kullanın
 // Aksi halde Gmail SMTP kullanılacak
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST || 'smtp.gmail.com',
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     const monthsText = selectedMonths.join(', ')
 
     // Email to company
-    const toEmail = process.env.SMTP_TO_EMAIL || process.env.GMAIL_TO_EMAIL || 'info@asagrouglobal.com'
+    const toEmail = process.env.SMTP_TO_EMAIL || process.env.GMAIL_TO_EMAIL || 'info@asagroupglobal.com'
     const fromEmail = process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER || process.env.GMAIL_USER || 'bedirhanugurlu3661@gmail.com'
     
     console.log('Sending email to:', toEmail)
