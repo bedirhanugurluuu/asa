@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "ASA Group Luxury Rent, İngiltere, Türkiye, Yunanistan ve Dubai'de premium lokasyonlarda kısa dönem kiralama yönetimi ve gelir optimizasyonu hizmetleri sunar.",
   keywords: "kısa dönem kiralama, Airbnb yönetimi, mülk yönetimi, gelir optimizasyonu, luxury rental, property management",
   verification: {
-    google: "6Ck05tVuEEqSVAwbfxP2EgtBaOGrPBbwE4lmhaK5W_8",
+    google: "mKP4ixbvZ92Fka1D-otkgNU1kd1FAooBVjS3IjektLo",
   },
   icons: {
     icon: [
@@ -45,7 +45,7 @@ export default function RootLayout({
       <body className={`${figtree.variable} font-sans antialiased`}>
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-JLE10KY9GZ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-LV9ZKJ8R1T"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -53,7 +53,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-JLE10KY9GZ');
+            gtag('config', 'G-LV9ZKJ8R1T');
           `}
         </Script>
         {children}

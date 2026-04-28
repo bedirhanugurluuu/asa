@@ -18,7 +18,7 @@ export default function SEO({ title, description, type = "website", image }: SEO
   const t = translations[currentLang];
 
   // Base URL - production'da gerçek domain ile değiştirilmeli
-  const baseUrl = typeof window !== "undefined" ? window.location.origin : "https://asagrouglobal.com";
+  const baseUrl = typeof window !== "undefined" ? window.location.origin : "https://asagroupglobal.com";
   
   // Canonical URL oluştur
   const canonicalPath = pathname === "/" ? "" : pathname;

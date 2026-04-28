@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 export const dynamic = 'force-static'
 
 export function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://asagrouglobal.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://asagroupglobal.com'
   
   // Tüm sayfalar
   const routes = [
