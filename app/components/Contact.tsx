@@ -29,7 +29,7 @@ export default function Contact({ showTitle = true }: ContactProps) {
           </div>
         )}
 
-        <div className="p-8 md:p-12">
+        <div className="md:p-12">
           {isSubmitted ? (
             <div className="text-center py-12">
               <div className="mb-4">

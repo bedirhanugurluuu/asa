@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import HeroTitle from "../components/HeroTitle";
+import Image from "next/image";
 import SEO from "../components/SEO";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
@@ -74,13 +74,14 @@ export default function ContactPage() {
 
               <div className="flex items-center justify-center">
                 <div className="md:w-full max-w-md lg:max-w-lg relative">
-                  <iframe
-                    src="/logos/about-illustration-contact.svg"
-                    className="w-full h-[400px] border-0"
-                    title="ASA Group Animation"
-                    loading="lazy"
+                  <Image
+                    src="/logos/asa-logo.svg"
+                    alt="ASA Group Logo"
+                    width={512}
+                    height={400}
+                    className="w-full h-auto md:h-[400px] object-contain md:p-20"
+                    sizes="(max-width: 1024px) 100vw, 512px"
                   />
-                  <div className="absolute bottom-0 left-0 w-full h-[100px] md:h-[50px] bg-[#fff] pointer-events-none" />
                 </div>
               </div>
             </div>
