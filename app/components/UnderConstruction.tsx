@@ -24,7 +24,7 @@ export default function UnderConstruction() {
         </div>
 
         {/* Ana Başlık */}
-        <h1 className="text-5xl md:text-7xl font-medium text-dark mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-medium text-dark mb-6 leading-tight ">
           Yakında
         </h1>
 
