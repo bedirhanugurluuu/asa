@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
@@ -200,6 +201,22 @@ export default function Contact({ showTitle = true }: ContactProps) {
                 style={{ backgroundColor: "#f7f7f7" }}
                 placeholder={t.contact.form.messagePlaceholder}
               ></textarea>
+            </div>
+
+            <div className="flex items-start gap-2">
+              <input
+                type="checkbox"
+                id="privacyConsent"
+                name="privacyConsent"
+                required
+                className="mt-1 h-4 w-4 rounded border-gray-300 text-dark focus:ring-dark"
+              />
+              <label htmlFor="privacyConsent" className="text-sm text-gray-700">
+                <Link href="/gizlilik-politikasi" target="_blank" className="underline hover:opacity-80">
+                  {"Gizlilik Politikası'nı"}
+                </Link>{" "}
+                okudum ve kabul ediyorum
+              </label>
             </div>
 
             {/* Error Message */}

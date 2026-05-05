@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/lib/useLanguage";
 import { translations } from "@/lib/translations";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaAirbnb } from "react-icons/fa";
+import { FaAirbnb } from "react-icons/fa";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -65,6 +65,30 @@ export default function Footer() {
                     className="text-black hover:opacity-70 transition-opacity"
                   >
                     {t.header.nav.contact}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/gizlilik-politikasi"
+                    className="text-black hover:opacity-70 transition-opacity"
+                  >
+                    Gizlilik Politikası
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/cerez-politikasi"
+                    className="text-black hover:opacity-70 transition-opacity"
+                  >
+                    Çerez Politikası
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/kvkk-politikasi"
+                    className="text-black hover:opacity-70 transition-opacity"
+                  >
+                    KVKK Politikası
                   </Link>
                 </li>
               </ul>

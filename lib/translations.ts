@@ -245,7 +245,7 @@ export const translations = {
         bedrooms: "Oda Sayısı",
         bedroomsSelect: "Seçiniz",
         maxGuests: "Maksimum Konuk Sayısı",
-        monthsLabel: "Mülkünüzü hangi aylarda kiralamayı planlıyorsunuz?",
+        monthsLabel: "Mülkünüzü hangi aylarda kiraya vermeyi planlıyorsunuz?",
         selectAll: "Tümünü Seç",
         deselectAll: "Tümünü Kaldır",
         ownerQuestion: "Bu mülkü zaten sahibi misiniz?",

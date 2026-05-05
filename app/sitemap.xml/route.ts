@@ -13,6 +13,9 @@ export function GET() {
     { path: '/quote', priority: '0.8', changefreq: 'monthly' },
     { path: '/contact', priority: '0.8', changefreq: 'monthly' },
     { path: '/airbnb-management', priority: '0.7', changefreq: 'weekly' },
+    { path: '/gizlilik-politikasi', priority: '0.6', changefreq: 'monthly' },
+    { path: '/cerez-politikasi', priority: '0.6', changefreq: 'monthly' },
+    { path: '/kvkk-politikasi', priority: '0.6', changefreq: 'monthly' },
     // İngilizce sayfalar
     { path: '/en', priority: '1.0', changefreq: 'daily' },
     { path: '/en/about', priority: '0.9', changefreq: 'monthly' },

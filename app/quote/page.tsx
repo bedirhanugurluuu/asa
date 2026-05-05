@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
@@ -343,7 +344,7 @@ export default function QuotePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Sol: Görsel ve Yazı */}
             <div className="w-full">
-              <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden relative mb-6">
+              <div className="w-full aspect-4/3 bg-gray-200 rounded-lg overflow-hidden relative mb-6">
                 <Image
                   src="/images/hero-image.png"
                   alt="ASA Group"
@@ -877,6 +878,22 @@ export default function QuotePage() {
                       rows={4}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dark focus:border-transparent resize-none"
                     />
+                  </div>
+
+                  <div className="flex items-start gap-2">
+                    <input
+                      type="checkbox"
+                      id="quotePrivacyConsent"
+                      name="quotePrivacyConsent"
+                      required
+                      className="mt-1 h-4 w-4 rounded border-gray-300 text-dark focus:ring-dark"
+                    />
+                    <label htmlFor="quotePrivacyConsent" className="text-sm text-dark/80">
+                      <Link href="/gizlilik-politikasi" target="_blank" className="underline hover:opacity-80">
+                        {"Gizlilik Politikası'nı"}
+                      </Link>{" "}
+                      okudum ve kabul ediyorum
+                    </label>
                   </div>
 
                   {/* Gönder Butonu */}
